@@ -4,6 +4,8 @@ let table = document.getElementById('employees')
 
 // SET A COUNT VARIABLE TO DISPLAY NEXT TO EMPLOYEES HEADER
 let count = 0
+let empCount = document.getElementById('empCount')
+empCount.textContent = `(${count})`
 
 // ADD EMPLOYEE
 form.addEventListener('submit', (e) => {
@@ -52,7 +54,7 @@ form.addEventListener('submit', (e) => {
 
     // INCREMENENT THE NUMBER OF EMPLOYEES IN THE TABLE
     count++;
-    document.getElementById('empCount').textContent = `(${count})`
+    empCount.textContent = `(${count})`
 
 })
 
